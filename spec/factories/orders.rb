@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :order do
     address nil
-    name "MyString"
+    name Faker::Name.name
   end
 end

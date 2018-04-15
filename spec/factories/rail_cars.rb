@@ -1,7 +1,6 @@
 FactoryBot.define do
   factory :rail_car do
-    address nil
-    order nil
-    shipping_type "MyString"
+    order
+    shipping_type { %w[ground air next-day-air].sample }
   end
 end
